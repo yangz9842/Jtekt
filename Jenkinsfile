@@ -7,22 +7,25 @@ pipeline {
                 script {
                     git branch: 'main',
                         credentialsId: 'token',
-                        url: 'https://github.com/junwoosan/JTEKT-demo.git'
+                        url: 'https://github.com/yangz9842/myrepo.git'
                 }
             }
         }
 
-        stage('REST API script execution'){
+        stage('REST API script execution') {
             steps {
-        
-                echo 'hello junwoo'
-                powershell 'ls'
-                powershell 'pwd'
-                powershell 'whoami'
-                powershell 'python pipeline_B2B.py /tmp/ep/JTEKT-demo  test.slx'
-      
+                echo 'hello yang12345'
+
+                // Replace PowerShell commands with bash commands
+                sh 'ls'                // Equivalent to PowerShell "ls"
+                sh 'pwd'               // Equivalent to PowerShell "pwd"
+                sh 'whoami'            // Equivalent to PowerShell "whoami"
+                
+                // Run your Python script with arguments
+                sh 'python3 pipeline_B2B.py /tmp/ep/ test.slx'
             }
         }
     }
 }
+
 
