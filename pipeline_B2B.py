@@ -6,7 +6,7 @@ from btc_embedded import EPRestApi, util, get_global_config
 import yaml
 import sys
 print(sys.version)
-WORKSPACE = sys.argv[1] + '/'
+WORKSPACE = sys.argv[1]
 #WORKSPACE = WORKSPACE.replace('\\', '/')
 MODELNAME = sys.argv[2]
 SCRIPTNAME = MODELNAME.split('.')[0] + '_init.m'
