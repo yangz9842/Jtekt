@@ -64,7 +64,7 @@ engine_setting = { 'scopeUid' : toplevel_scope_uid,
                     
                       'pllString': 'MCDC',
                       'engineSettings' : {
-                          'timeoutSeconds' : 180 
+                          'timeoutSeconds' : 360 
                           }
                   }
 
