@@ -62,9 +62,10 @@ toplevel_scope_uid = scopes[0]['uid']
 
 engine_setting = { 'scopeUid' : toplevel_scope_uid,
                     
-                      'pllString': 'C/DC and MC/DC',
+                      'pllString': 'MC/DC',
                       'engineSettings' : {
-                    'timeoutSeconds' : 180 }
+                          'timeoutSeconds' : 180 
+                          }
                   }
 
 ep.post('coverage-generation', engine_setting)
