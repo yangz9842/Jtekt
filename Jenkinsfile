@@ -29,6 +29,17 @@ pipeline {
                 powershell 'whoami'
                 powershell 'python pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
             }
+            
+        }
+        stage('Publish Report') {
+            steps {
+                // Publish the HTML report
+                publishHTML([
+                    reportDir: '/tmp/ep/B2B_report',
+                    reportFiles: 'B2B_report_for_powerwindow_tl.slx.html',
+                    reportName: 'BTC Test Report'
+                ])
+            }
         }
     }
 }
