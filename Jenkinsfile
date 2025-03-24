@@ -24,7 +24,7 @@ pipeline {
                 
                 // Run your Python script with arguments
                 //sh 'python3 pipeline_B2B.py /tmp/ep/ test.slx'
-                 powershell 'ls'
+                powershell 'ls'
                 powershell 'pwd'
                 powershell 'whoami'
                 powershell 'python pipeline_B2B.py /tmp/ep/ test.slx'
