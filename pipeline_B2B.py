@@ -61,12 +61,11 @@ scopes = ep.get('scopes?top-level=true')
 toplevel_scope_uid = scopes[0]['uid']
 
 engine_setting = { 'scopeUid' : toplevel_scope_uid,
-                  "targetDefinitions": [
-                    {
-                      "label": "C/DC and MC/DC"
-                    }
-                  ],
-    }
+                    
+                      'pllString': 'C/DC and MC/DC',
+                      'engineSettings' : {
+                    'timeoutSeconds' : 180 }
+                  }
 
 ep.post('coverage-generation', engine_setting)
 print('Stimuli Vectors are generated')
