@@ -27,7 +27,7 @@ pipeline {
                 powershell 'ls'
                 powershell 'pwd'
                 powershell 'whoami'
-                powershell 'python pipeline_B2B.py /tmp/ep/ test.slx'
+                powershell 'python pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
             }
         }
     }
