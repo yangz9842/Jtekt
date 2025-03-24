@@ -62,7 +62,7 @@ toplevel_scope_uid = scopes[0]['uid']
 
 engine_setting = { 'scopeUid' : toplevel_scope_uid,
                     
-                      'pllString': 'MC/DC',
+                      'pllString': 'MCDC',
                       'engineSettings' : {
                           'timeoutSeconds' : 180 
                           }
