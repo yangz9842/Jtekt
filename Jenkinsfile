@@ -35,7 +35,7 @@ pipeline {
             steps {
                 // Publish the HTML report
                 publishHTML([
-                    reportDir: '/tmp/ep/B2B_report/',
+                    reportDir: '/tmp/ep/B2B_reports/',
                     reportFiles: 'B2B_report_for_powerwindow_tl.slx.html',
                     reportName: 'BTC Test Report',
                      keepAll: true,                 // Keeps all historical reports
