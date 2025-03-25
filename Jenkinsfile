@@ -38,6 +38,7 @@ pipeline {
                     reportDir: '/tmp/ep/B2B_report/',
                     reportFiles: 'B2B_report_for_powerwindow_tl.slx.html',
                     reportName: 'BTC Test Report'
+                    keepAll: true  // Keeps old reports (set to false if you want to overwrite them)
                 ])
             }
         }
