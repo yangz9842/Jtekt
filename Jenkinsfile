@@ -52,7 +52,7 @@ pipeline {
                 emailext(
                     subject: "Jenkins Build SUCCESS: ${env.JOB_NAME} - ${env.BUILD_NUMBER}",
                     body: "Good news! The build was successful.\n\nBuild Details:\nJob Name: ${env.JOB_NAME}\nBuild Number: ${env.BUILD_NUMBER}",
-                    to: 'recipient@example.com'
+                    to: 'yang.zhang@btcjapan.jp'
                 )
             }
         }
