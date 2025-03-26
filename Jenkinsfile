@@ -18,12 +18,12 @@ pipeline {
                 echo 'hello yang12345'
 
                 // Replace PowerShell commands with bash commands
-                sh 'ls'                // Equivalent to PowerShell "ls"
+                sh 'ls -l /tmp/ep'                // Equivalent to PowerShell "ls"
                 sh 'pwd'               // Equivalent to PowerShell "pwd"
                 sh 'whoami'            // Equivalent to PowerShell "whoami"
                 
                 // Run your Python script with arguments
-                sh 'python3 /tmp/ep/pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
+                sh 'python3 pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
                 //powershell 'ls'
                 //powershell 'pwd'
                 //powershell 'whoami'
