@@ -23,7 +23,7 @@ pipeline {
                 sh 'whoami'            // Equivalent to PowerShell "whoami"
                 
                 // Run your Python script with arguments
-                sh 'python3 pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
+                sh 'python3 /tmp/ep/pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
                 //powershell 'ls'
                 //powershell 'pwd'
                 //powershell 'whoami'
