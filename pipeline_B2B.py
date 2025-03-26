@@ -10,7 +10,7 @@ WORKSPACE = sys.argv[1]
 #WORKSPACE = WORKSPACE.replace('\\', '/')
 MODELNAME = sys.argv[2]
 SCRIPTNAME = MODELNAME.split('.')[0] + '_init.m'
-Job_name = 'JTEKT-demo'
+Job_name = 'jtekt_JP'
 FILE_SAVE_PLACE = WORKSPACE
 print('executing file is ' + __file__)
 print('working directroy is ' + WORKSPACE)
