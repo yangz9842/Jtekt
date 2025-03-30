@@ -15,8 +15,10 @@ FILE_SAVE_PLACE = WORKSPACE
 print('executing file is ' + __file__)
 print('working directroy is ' + WORKSPACE)
 
+
 ep = EPRestApi( host = 'http://localhost',  port = 1337)
 
+#ep = EPRestApi()
 def getkeyfromressource(key, ressource):
   return ressource.get(key)
 

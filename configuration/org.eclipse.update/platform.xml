@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1743307662689" transient="false" shared_ur="file:configuration/org.eclipse.update/platform.xml" version="3.0">
+	<site updateable="true" url="file:/tmp/ep/" enabled="true" policy="USER-EXCLUDE">
+	</site>
+	<site updateable="true" url="file:dropins/ep.requirement.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.requirement.feature" version="231.0.0.202303271457" url="features/ep.requirement.feature_231.0.0.202303271457/">
+		</feature>
+		<feature id="com.sodius.mdw.btc" version="1.5.0.v20211123-0949" url="features/com.sodius.mdw.btc_1.5.0.v20211123-0949/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.analysis.b2b.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.analysis.b2b.feature" version="231.0.0.202304031316" url="features/ep.analysis.b2b.feature_231.0.0.202304031316/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.analysis.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.analysis.feature" version="231.0.0.202304031304" url="features/ep.analysis.feature_231.0.0.202304031304/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.analysis.test.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.analysis.test.feature" version="231.0.0.202304031311" url="features/ep.analysis.test.feature_231.0.0.202304031311/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.arch.embeddedcoder.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.arch.embeddedcoder.feature" version="231.0.0.202303271455" url="features/ep.arch.embeddedcoder.feature_231.0.0.202303271455/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.arch.ev.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.arch.ev.feature" version="231.0.0.202303271501" url="features/ep.arch.ev.feature_231.0.0.202303271501/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.arch.mdf.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.arch.mdf.feature" version="231.0.0.202303271441" url="features/ep.arch.mdf.feature_231.0.0.202303271441/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.arch.sdf.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.arch.sdf.feature" version="231.0.0.202303271456" url="features/ep.arch.sdf.feature_231.0.0.202303271456/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.arch.sl.tpl.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.arch.sl.tpl.feature" version="231.0.0.202303271457" url="features/ep.arch.sl.tpl.feature_231.0.0.202303271457/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.architecture.ccode.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.architecture.ccode.feature" version="231.0.0.202303271441" url="features/ep.architecture.ccode.feature_231.0.0.202303271441/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.architecture.ccode.ui.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.architecture.ccode.ui.feature" version="231.0.0.202303271441" url="features/ep.architecture.ccode.ui.feature_231.0.0.202303271441/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.architecture.coverage.ccode.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.architecture.coverage.ccode.feature" version="231.0.0.202303271452" url="features/ep.architecture.coverage.ccode.feature_231.0.0.202303271452/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.architecture.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.architecture.feature" version="231.0.0.202303271438" url="features/ep.architecture.feature_231.0.0.202303271438/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.architecture.observer.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.architecture.observer.feature" version="231.0.0.202303271452" url="features/ep.architecture.observer.feature_231.0.0.202303271452/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.architecture.simulink.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.architecture.simulink.feature" version="231.0.0.202303271449" url="features/ep.architecture.simulink.feature_231.0.0.202303271449/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.architecture.targetlink.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.architecture.targetlink.feature" version="231.0.0.202303271455" url="features/ep.architecture.targetlink.feature_231.0.0.202303271455/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.architecture.userdefined.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.architecture.userdefined.feature" version="231.0.0.202303271507" url="features/ep.architecture.userdefined.feature_231.0.0.202303271507/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.atg4req.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.atg4req.feature" version="231.0.0.202304031346" url="features/ep.atg4req.feature_231.0.0.202304031346/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.atg4struct.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.atg4struct.feature" version="231.0.0.202304031342" url="features/ep.atg4struct.feature_231.0.0.202304031342/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.b2b.cov.ccode.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.b2b.cov.ccode.feature" version="231.0.0.202304031338" url="features/ep.b2b.cov.ccode.feature_231.0.0.202304031338/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.b2b.cov.model.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.b2b.cov.model.feature" version="231.0.0.202304031335" url="features/ep.b2b.cov.model.feature_231.0.0.202304031335/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.b2b.userdefinedtest.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.b2b.userdefinedtest.feature" version="231.0.0.202304031351" url="features/ep.b2b.userdefinedtest.feature_231.0.0.202304031351/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.base.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.base.feature" version="231.0.0.202303271434" url="features/ep.base.feature_231.0.0.202303271434/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.c.observer.export.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.c.observer.export.feature" version="231.0.0.202303271512" url="features/ep.c.observer.export.feature_231.0.0.202303271512/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.ccc.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.ccc.feature" version="231.0.0.202304031349" url="features/ep.ccc.feature_231.0.0.202304031349/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.core.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.core.feature" version="231.0.0.202303241849" url="features/ep.core.feature_231.0.0.202303241849/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.coverage.ccode.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.coverage.ccode.feature" version="231.0.0.202304031329" url="features/ep.coverage.ccode.feature_231.0.0.202304031329/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.coverage.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.coverage.feature" version="231.0.0.202303271439" url="features/ep.coverage.feature_231.0.0.202303271439/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.coverage.model.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.coverage.model.feature" version="231.0.0.202304031324" url="features/ep.coverage.model.feature_231.0.0.202304031324/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.engine.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.engine.feature" version="231.0.0.202304031331" url="features/ep.engine.feature_231.0.0.202304031331/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.expression.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.expression.feature" version="231.0.0.202303271442" url="features/ep.expression.feature_231.0.0.202303271442/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.formalnotation.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.formalnotation.feature" version="231.0.0.202303271503" url="features/ep.formalnotation.feature_231.0.0.202303271503/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.formalsimulation.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.formalsimulation.feature" version="231.0.0.202304031324" url="features/ep.formalsimulation.feature_231.0.0.202304031324/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.formaltest.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.formaltest.feature" version="231.0.0.202304031342" url="features/ep.formaltest.feature_231.0.0.202304031342/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.formalverification.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.formalverification.feature" version="231.0.0.202304031345" url="features/ep.formalverification.feature_231.0.0.202304031345/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.harness.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.harness.feature" version="231.0.0.202303271449" url="features/ep.harness.feature_231.0.0.202303271449/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.objectdb.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.objectdb.feature" version="231.0.0.202303241852" url="features/ep.objectdb.feature_231.0.0.202303241852/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.observer.goals.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.observer.goals.feature" version="231.0.0.202304031337" url="features/ep.observer.goals.feature_231.0.0.202304031337/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.rbt.coverage.model.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.rbt.coverage.model.feature" version="231.0.0.202304031330" url="features/ep.rbt.coverage.model.feature_231.0.0.202304031330/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.rbt.userdefinedtest.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.rbt.userdefinedtest.feature" version="231.0.0.202304031351" url="features/ep.rbt.userdefinedtest.feature_231.0.0.202304031351/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.req.based.test.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.req.based.test.feature" version="231.0.0.202304031315" url="features/ep.req.based.test.feature_231.0.0.202304031315/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.requirement.coverage.code.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.requirement.coverage.code.feature" version="231.0.0.202304031332" url="features/ep.requirement.coverage.code.feature_231.0.0.202304031332/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.rtt.observer.export.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.rtt.observer.export.feature" version="231.0.0.202303271512" url="features/ep.rtt.observer.export.feature_231.0.0.202303271512/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.script.view.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.script.view.feature" version="231.0.0.202304031316" url="features/ep.script.view.feature_231.0.0.202304031316/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.simulation.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.simulation.feature" version="231.0.0.202304031308" url="features/ep.simulation.feature_231.0.0.202304031308/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.simulation.ml.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.simulation.ml.feature" version="231.0.0.202304031320" url="features/ep.simulation.ml.feature_231.0.0.202304031320/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.simulation.sil.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.simulation.sil.feature" version="231.0.0.202304031320" url="features/ep.simulation.sil.feature_231.0.0.202304031320/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.specification.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.specification.feature" version="231.0.0.202303271510" url="features/ep.specification.feature_231.0.0.202303271510/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.stimuli.vector.excel.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.stimuli.vector.excel.feature" version="231.0.0.202304031324" url="features/ep.stimuli.vector.excel.feature_231.0.0.202304031324/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.stimuli.vector.tc.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.stimuli.vector.tc.feature" version="231.0.0.202304031321" url="features/ep.stimuli.vector.tc.feature_231.0.0.202304031321/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.tc.ui.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.tc.ui.feature" version="231.0.0.202304031258" url="features/ep.tc.ui.feature_231.0.0.202304031258/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.testcase.excel.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.testcase.excel.feature" version="231.0.0.202304031315" url="features/ep.testcase.excel.feature_231.0.0.202304031315/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.ui.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.ui.feature" version="231.0.0.202303271431" url="features/ep.ui.feature_231.0.0.202303271431/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.userdefinedcov.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.userdefinedcov.feature" version="231.0.0.202304031347" url="features/ep.userdefinedcov.feature_231.0.0.202304031347/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.userdefinedtest.atg4struct.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.userdefinedtest.atg4struct.feature" version="231.0.0.202304031346" url="features/ep.userdefinedtest.atg4struct.feature_231.0.0.202304031346/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.userdefinedtest.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.userdefinedtest.feature" version="231.0.0.202304031341" url="features/ep.userdefinedtest.feature_231.0.0.202304031341/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.vector.excel.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.vector.excel.feature" version="231.0.0.202303271452" url="features/ep.vector.excel.feature_231.0.0.202303271452/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.vector.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.vector.feature" version="231.0.0.202303271446" url="features/ep.vector.feature_231.0.0.202303271446/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.vector.mdf.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.vector.mdf.feature" version="231.0.0.202304031312" url="features/ep.vector.mdf.feature_231.0.0.202304031312/">
+		</feature>
+	</site>
+	<site updateable="true" url="file:dropins/ep.vector.tc.feature-zip/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="ep.vector.tc.feature" version="231.0.0.202303271452" url="features/ep.vector.tc.feature_231.0.0.202303271452/">
+		</feature>
+	</site>
+</config>
