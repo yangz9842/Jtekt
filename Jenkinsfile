@@ -21,7 +21,7 @@ pipeline {
                 powershell 'pwd'               // Equivalent to PowerShell "pwd"
                 powershell 'whoami'            // Equivalent to PowerShell "whoami"
                 // Run your Python script with arguments
-                powershell 'python pipeline_B2B_1.py /tmp/ep/ powerwindow_tl.slx'
+                powershell 'python3 pipeline_B2B_1.py /tmp/ep/ powerwindow_tl.slx'
                 
             }
             
