@@ -1,0 +1,54 @@
+%implements s4_b0_7miwe_1_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+boolean_T driver_validated_up_tmp;
+boolean_T rtb_checked_action;
+%closefile localVarDecl
+/* Logic: '<S8>/Logical Operator' incorporates:
+ *  Inport: '<Root>/driver_down'
+ *  Logic: '<S8>/Logical Operator1'
+ */
+%<SLibCG_DumpSSCode("/*@[8229*/",SLibCG_SetBOCSC(4, 1, "", -1, "", 0, "(%<SLibCG_DumpSSCode("/*@[8393*/",(SLibCG_SE(SLibCG_EI_CSC(1, 1, "", -1, "", 0))),"/*@]*/")>/*@>8392*/ && (!/*@<839e*/%<SLibCG_DumpSSCode("/*@[839f*/",(SLibCG_SE(SLibCG_BOCSC(7, 1, "", -1, "", 0))),"/*@]*/")>))"),"/*@]*/")>\
+/* Logic: '<S9>/allow_action' incorporates:
+ *  Inport: '<Root>/driver_up'
+ *  Logic: '<S9>/not'
+ */
+/*@>7de0*/rtb_checked_action/*@>6580*/ = (%<SLibCG_DumpSSCode("/*@[825f*/",(SLibCG_SE(SLibCG_EI_CSC(0, 1, "", -1, "", 0))),"/*@]*/")>/*@>657f*/ && (!/*@<7bee*/%<SLibCG_DumpSSCode("/*@[8243*/",(SLibCG_SE(SLibCG_BOCSC(8, 1, "", -1, "", 0))),"/*@]*/")>));
+/* Logic: '<S11>/not_down' incorporates:
+ *  Logic: '<S11>/up_after_down1'
+ */
+/*@>7f25*/driver_validated_up_tmp/*@>7f27*/ = !/*@<7bf9*/%<SLibCG_DumpSSCode("/*@[8307*/",(SLibCG_SE(SLibCG_BOCSC(4, 1, "", -1, "", 0))),"/*@]*/")>;
+/* Logic: '<S11>/up_after_down' incorporates:
+ *  Logic: '<S11>/not_down'
+ */
+%<SLibCG_DumpSSCode("/*@[827d*/",SLibCG_SetBOCSC(5, 1, "", -1, "", 0, "(/*@>83bc*/rtb_checked_action/*@>83bb*/ && /*@>83bd*/driver_validated_up_tmp)"),"/*@]*/")>\
+/* Logic: '<S11>/default_neutral' incorporates:
+ *  DataTypeConversion: '<S10>/control input2'
+ *  DataTypeConversion: '<S10>/control input3'
+ *  Inport: '<Root>/driver_down'
+ *  Inport: '<Root>/driver_up'
+ *  Logic: '<S10>/Logical Operator'
+ *  Logic: '<S10>/Logical Operator1'
+ *  Logic: '<S11>/neutral_after_up'
+ *  Logic: '<S11>/not_up'
+ *  Logic: '<S11>/not_up1'
+ *  Logic: '<S11>/up_after_down1'
+ */
+%<SLibCG_DumpSSCode("/*@[82ed*/",SLibCG_SetBOCSC(6, 1, "", -1, "", 0, "(((!/*@<83d2*/%<SLibCG_DumpSSCode("/*@[83d3*/",(SLibCG_SE(SLibCG_EI_CSC(0, 1, "", -1, "", 0))),"/*@]*/")>)/*@>83d1*/ && (!/*@<83de*/%<SLibCG_DumpSSCode("/*@[83df*/",(SLibCG_SE(SLibCG_EI_CSC(1, 1, "", -1, "", 0))),"/*@]*/")>)/*@>83d0*/ && (!/*@<83ea*/%<SLibCG_DumpSSCode("/*@[83eb*/",(SLibCG_SE(SLibCG_BOCSC(5, 1, "", -1, "", 0))),"/*@]*/")>))/*@>83cf*/ || ((!/*@<83f7*//*@>83f8*/rtb_checked_action)/*@>83f6*/ && driver_validated_up_tmp))"),"/*@]*/")>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void validate_driver(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 0, fcnProtoType)>
+%endfunction

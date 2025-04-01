@@ -1,0 +1,81 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   9 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_c1_powerwindow_ec"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_safe"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "safe"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_driverNeutral"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "safe.driverNeutral"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_passengerDown"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "safe.driverNeutral.passengerDown"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_passengerUp"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "safe.driverNeutral.passengerUp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_driverUp"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "safe.driverUp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_driverDown"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "safe.driverDown"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c1_powerwindow_ec"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

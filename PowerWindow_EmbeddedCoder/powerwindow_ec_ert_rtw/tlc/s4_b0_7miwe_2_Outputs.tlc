@@ -1,0 +1,54 @@
+%implements s4_b0_7miwe_2_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+boolean_T passenger_validated_up_tmp;
+boolean_T rtb_checked_action;
+%closefile localVarDecl
+/* Logic: '<S12>/allow_action' incorporates:
+ *  Inport: '<Root>/passenger_down'
+ *  Logic: '<S12>/not'
+ */
+%<SLibCG_DumpSSCode("/*@[8c08*/",SLibCG_SetBOCSC(1, 1, "", -1, "", 0, "(%<SLibCG_DumpSSCode("/*@[8d72*/",(SLibCG_SE(SLibCG_EI_CSC(3, 1, "", -1, "", 0))),"/*@]*/")>/*@>8d71*/ && (!/*@<8d7d*/%<SLibCG_DumpSSCode("/*@[8d7e*/",(SLibCG_SE(SLibCG_BOCSC(7, 1, "", -1, "", 0))),"/*@]*/")>))"),"/*@]*/")>\
+/* Logic: '<S13>/allow_action' incorporates:
+ *  Inport: '<Root>/passenger_up'
+ *  Logic: '<S13>/not'
+ */
+/*@>87bf*/rtb_checked_action/*@>6603*/ = (%<SLibCG_DumpSSCode("/*@[8c3e*/",(SLibCG_SE(SLibCG_EI_CSC(2, 1, "", -1, "", 0))),"/*@]*/")>/*@>6602*/ && (!/*@<85cd*/%<SLibCG_DumpSSCode("/*@[8c22*/",(SLibCG_SE(SLibCG_BOCSC(8, 1, "", -1, "", 0))),"/*@]*/")>));
+/* Logic: '<S14>/not_down' incorporates:
+ *  Logic: '<S14>/up_after_down1'
+ */
+/*@>8904*/passenger_validated_up_tmp/*@>8906*/ = !/*@<85d8*/%<SLibCG_DumpSSCode("/*@[8ce6*/",(SLibCG_SE(SLibCG_BOCSC(1, 1, "", -1, "", 0))),"/*@]*/")>;
+/* Logic: '<S14>/up_after_down' incorporates:
+ *  Logic: '<S14>/not_down'
+ */
+%<SLibCG_DumpSSCode("/*@[8c5c*/",SLibCG_SetBOCSC(2, 1, "", -1, "", 0, "(/*@>8d9b*/rtb_checked_action/*@>8d9a*/ && /*@>8d9c*/passenger_validated_up_tmp)"),"/*@]*/")>\
+/* Logic: '<S14>/default_neutral' incorporates:
+ *  DataTypeConversion: '<S15>/control input2'
+ *  DataTypeConversion: '<S15>/control input3'
+ *  Inport: '<Root>/passenger_down'
+ *  Inport: '<Root>/passenger_up'
+ *  Logic: '<S14>/neutral_after_up'
+ *  Logic: '<S14>/not_up'
+ *  Logic: '<S14>/not_up1'
+ *  Logic: '<S14>/up_after_down1'
+ *  Logic: '<S15>/Logical Operator'
+ *  Logic: '<S15>/Logical Operator1'
+ */
+%<SLibCG_DumpSSCode("/*@[8ccc*/",SLibCG_SetBOCSC(3, 1, "", -1, "", 0, "(((!/*@<8db1*/%<SLibCG_DumpSSCode("/*@[8db2*/",(SLibCG_SE(SLibCG_EI_CSC(2, 1, "", -1, "", 0))),"/*@]*/")>)/*@>8db0*/ && (!/*@<8dbd*/%<SLibCG_DumpSSCode("/*@[8dbe*/",(SLibCG_SE(SLibCG_EI_CSC(3, 1, "", -1, "", 0))),"/*@]*/")>)/*@>8daf*/ && (!/*@<8dc9*/%<SLibCG_DumpSSCode("/*@[8dca*/",(SLibCG_SE(SLibCG_BOCSC(2, 1, "", -1, "", 0))),"/*@]*/")>))/*@>8dae*/ || ((!/*@<8dd6*//*@>8dd7*/rtb_checked_action)/*@>8dd5*/ && passenger_validated_up_tmp))"),"/*@]*/")>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void validate_passenger(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(2, 0, fcnProtoType)>
+%endfunction

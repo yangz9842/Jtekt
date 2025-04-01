@@ -1,0 +1,103 @@
+%implements s4_b0_7miwe_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+/* {S!d36}UnitDelay: '<S1>/Unit Delay' */
+%<SLibCG_DumpSSCode("/*@[13779*/",SLibCG_SetBOCSC(0, 1, "", -1, "", 0, "/*@>13fd0*/powerwindow_ec_DW./*@>13fcf*/UnitDelay_DSTATE"),"/*@]*/")>\
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[1], "Output",0)
+/* {S!d29}Outputs for Atomic SubSystem: '<S1>/detect_obstacle_endstop' */
+%<SLibCG_DumpSSCode("/*@[1371f*/",SLibCGIRGenReusableSysCall("detect_obstacle_endstop", [], 1, 0, 6, 0, 6, 4),"/*@]*/")>\
+%assign ss = ::CompiledModel.System[1]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+/* {E!d29}End of Outputs for SubSystem: '<S1>/detect_obstacle_endstop' */
+%endif
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[2], "Output",0)
+
+/* {S!d31}Outputs for Atomic SubSystem: '<S1>/validate_driver' */
+%<SLibCG_DumpSSCode("/*@[13720*/",SLibCGIRGenReusableSysCall("validate_driver", [], 2, 0, 6, 0, 6, 4),"/*@]*/")>\
+%assign ss = ::CompiledModel.System[2]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+/* {E!d31}End of Outputs for SubSystem: '<S1>/validate_driver' */
+%endif
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[3], "Output",0)
+
+/* {S!d33}Outputs for Atomic SubSystem: '<S1>/validate_passenger' */
+%<SLibCG_DumpSSCode("/*@[13721*/",SLibCGIRGenReusableSysCall("validate_passenger", [], 3, 0, 6, 0, 6, 4),"/*@]*/")>\
+%assign ss = ::CompiledModel.System[3]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+/* {E!d33}End of Outputs for SubSystem: '<S1>/validate_passenger' */
+
+%endif
+/* {S!d38}Chart: '<S1>/control' incorporates:
+ *  Constant: '<S1>/Constant'
+ */
+/* Gateway: powerwindow_controller/control */
+/*@>64b2*/if (/*@>11ff9*/powerwindow_ec_DW./*@>13f91*/temporalCounter_i1/*@>64b1*/ < /*@>c23e*/255U) {
+    /*@>11fff*/powerwindow_ec_DW./*@>13f94*/temporalCounter_i1/*@>13f49*/++;
+}
+/* During: powerwindow_controller/control */
+/*@>64bf*/if (/*@>1200b*/powerwindow_ec_DW./*@>13f97*/is_active_c1_powerwindow_ec/*@>64bd*/ == /*@>c248*/0U) {
+    /* Entry: powerwindow_controller/control */
+    /*@>12017*/powerwindow_ec_DW./*@>13f9d*/is_active_c1_powerwindow_ec/*@>64c9*/ = /*@>13f41*/1U;
+    /* Entry Internal: powerwindow_controller/control */
+    /* Transition: '<S2>:2' */
+    /*@>1202f*/powerwindow_ec_DW./*@>13fa9*/is_c1_powerwindow_ec/*@>64e6*/ = /*@>c25c*/powerwindow_ec_IN_safe;
+    /* Entry Internal 'safe': '<S2>:1' */
+    /* Transition: '<S2>:40' */
+    /*@>12041*/powerwindow_ec_DW./*@>13fb2*/is_safe/*@>64ec*/ = /*@>c25f*/powerwindow_ec_IN_driverNeutral;
+    /* Entry 'driverNeutral': '<S2>:3' */
+    /* Entry Internal 'driverNeutral': '<S2>:3' */
+    /* Transition: '<S2>:23' */
+    /*@>12047*/powerwindow_ec_DW./*@>13fb5*/is_driverNeutral/*@>64fb*/ = /*@>c266*/powerwindow_ec_IN_passengerneutral;
+    /* Entry 'passengerneutral': '<S2>:4' */
+%<SLibCG_DumpSSCode("/*@[137cd*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>14019*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[137e9*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>1402b*/false"),"/*@]*/")>\
+} else /*@>bde3*/if (/*@>12011*/powerwindow_ec_DW./*@>13f9a*/is_c1_powerwindow_ec/*@>bde2*/ == /*@>12235*/powerwindow_ec_IN_emergencyDown) {
+    /* During 'emergencyDown': '<S2>:59' */
+    /*@>64cb*/if (%<SLibCG_DumpSSCode("/*@[1375b*/",(SLibCG_SE(SLibCG_BOCSC(7, 1, "", -1, "", 0))),"/*@]*/")>/*@>64da*/ || (/*@>1201d*/powerwindow_ec_DW./*@>13fa0*/temporalCounter_i1/*@>64dd*/ >= %<SLibCG_DumpSSCode("/*@[1373f*/",(SLibCG_SE(SLibCGIR_CSCP(6, 0, 1, "", -1, "", 0))),"/*@]*/")>)) {
+        /* Transition: '<S2>:61' */
+        /*@>12029*/powerwindow_ec_DW./*@>13fa6*/is_c1_powerwindow_ec/*@>64d0*/ = /*@>c24d*/powerwindow_ec_IN_safe;
+        /*@>12035*/powerwindow_ec_DW./*@>13fac*/is_safe/*@>64d4*/ = /*@>c250*/powerwindow_ec_IN_driverNeutral;
+        /* Entry 'driverNeutral': '<S2>:3' */
+        /*@>1203b*/powerwindow_ec_DW./*@>13faf*/is_driverNeutral/*@>64d8*/ = /*@>c253*/powerwindow_ec_IN_passengerneutral;
+        /* Entry 'passengerneutral': '<S2>:4' */
+%<SLibCG_DumpSSCode("/*@[13795*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>1403d*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[137b1*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>1404f*/false"),"/*@]*/")>\
+    }
+} else {
+    %<SLibCG_DumpSSCode("/*@[139be*/",(SLibCGCallSubFcn("powerwindow_ec_safe", [], 3, 2, 0)),"/*@]*/")>;
+}
+/* {E!d38}End of Chart: '<S1>/control' */
+
+/* {S!d40}Update for UnitDelay: '<S1>/Unit Delay' */
+/*@>12023*/powerwindow_ec_DW./*@>13fa3*/UnitDelay_DSTATE/*@>651e*/ = %<SLibCG_DumpSSCode("/*@[13803*/",(SLibCG_SE(SLibCG_BOCSC(11, 1, "", -1, "", 0))),"/*@]*/")>;
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 2, fcnProtoType)>
+%endfunction

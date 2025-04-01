@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeGenReport MajorVersion="1" MinorVersion="1" xmlns:TL="http://www.dspace.de/TargetLink" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dspace.de/TargetLink CGReport.xsd" md5="cae570f2ba2b0d59de780a2f6ce524f0">
+    <Base CodeGenerationUnit="PowerWindowController" Timestamp="2025-03-31T17:59:09">
+        <CgOptions md5="4f611286cbcfb6446d113c0d4578ab4a">
+            <CgOption Name="ARDataPrototypeActualParamName" Value="$(DataPrototype)$R" Type="STRING"/>
+            <CgOption Name="AlarmActivationKind" Value="1" Type="INT"/>
+            <CgOption Name="AlarmInitWithRestart" Value="1" Type="BOOL"/>
+            <CgOption Name="AlarmStartOffset" Value="0" Type="DOUBLE"/>
+            <CgOption Name="Allow64BitMultiplicationsForArbitraryScaled16BitOperands" Value="1" Type="BOOL"/>
+            <CgOption Name="AllowDuplicationOfImplicitAUTOSARDataAccess" Value="1" Type="BOOL"/>
+            <CgOption Name="AllowInterleavingCodeForAllSubsystems" Value="1" Type="BOOL"/>
+            <CgOption Name="AllowMovingOfCustomCodeForBlockDiagramBasedSwitchOptimization" Value="1" Type="BOOL"/>
+            <CgOption Name="AllowStructAssignments" Value="1" Type="BOOL"/>
+            <CgOption Name="AssignmentOfConditions" Value="2" Type="INT"/>
+            <CgOption Name="AssumeFunctionCallSemanticsForRteAPIArguments" Value="1" Type="BOOL"/>
+            <CgOption Name="AssumeOperationCallsHaveNoUnknownDataFlow" Value="1" Type="BOOL"/>
+            <CgOption Name="AssumePossibleSideEffectsForReadAccessToNonErasableVariables" Value="0" Type="BOOL"/>
+            <CgOption Name="AutoInitAlarm" Value="1" Type="BOOL"/>
+            <CgOption Name="AutoPriority" Value="0" Type="BOOL"/>
+            <CgOption Name="AutoSelectBoolTypesForLocalMATLABVariables" Value="1" Type="BOOL"/>
+            <CgOption Name="AutoSelectFloatTypesForLocalMATLABVariables" Value="1" Type="BOOL"/>
+            <CgOption Name="AutoSelectIntegerTypesForLocalMATLABVariables" Value="1" Type="BOOL"/>
+            <CgOption Name="AvoidNestedVariablePropagationPointerAccess" Value="0" Type="BOOL"/>
+            <CgOption Name="AvoidStaticLocalScope" Value="1" Type="INT"/>
+            <CgOption Name="CodeCoverageLevel" Value="0" Type="INT"/>
+            <CgOption Name="CodeGenerationMode" Value="0" Type="INT"/>
+            <CgOption Name="CodeGenerationTargetSettings" Value="Generic ANSI-C" Type="STRING"/>
+            <CgOption Name="CombineControlFlowStatements" Value="1" Type="BOOL"/>
+            <CgOption Name="ConfigXML" Value="C:\Program Files\dSPACE TargetLink 2022-B\Matlab\Tl\config\codegen\cconfig.xml" Type="STRING"/>
+            <CgOption Name="ConformingFreestandingImplementation" Value="0" Type="BOOL"/>
+            <CgOption Name="ConsiderAllVariablesForBlockDiagramBasedSwitchOptimization" Value="0" Type="BOOL"/>
+            <CgOption Name="ConsiderMergeableForBlockDiagramBasedSwitchOptimization" Value="1" Type="BOOL"/>
+            <CgOption Name="CurrentRtos" Value="generic RTOS" Type="STRING"/>
+            <CgOption Name="DecimalConstants" Value="1" Type="BOOL"/>
+            <CgOption Name="DefaultCppHeaderFileExtension" Value="h" Type="STRING"/>
+            <CgOption Name="DefaultCppSourceFileExtension" Value="cpp" Type="STRING"/>
+            <CgOption Name="DeriveDefaultSymbolClasses" Value="0" Type="BOOL"/>
+            <CgOption Name="DoNotMoveIfLogged" Value="0" Type="BOOL"/>
+            <CgOption Name="DoNotUseAssignArithmeticForAccumulation" Value="0" Type="BOOL"/>
+            <CgOption Name="EmitAllTagNameConflictsAsError" Value="0" Type="BOOL"/>
+            <CgOption Name="EmitEncapsulationByExternC" Value="1" Type="INT"/>
+            <CgOption Name="EmitMissingRequirementsWarningsAsNotes" Value="0" Type="BOOL"/>
+            <CgOption Name="EnableAssembler" Value="0" Type="BOOL"/>
+            <CgOption Name="EnableBlockDiagramBasedSwitchOptimization" Value="1" Type="BOOL"/>
+            <CgOption Name="EnableDataPages" Value="0" Type="BOOL"/>
+            <CgOption Name="EnableExternCStateflowSymbols" Value="0" Type="BOOL"/>
+            <CgOption Name="EnableExternFunctionMerge" Value="0" Type="BOOL"/>
+            <CgOption Name="EnableReportGeneration" Value="1" Type="BOOL"/>
+            <CgOption Name="EnableSections" Value="1" Type="BOOL"/>
+            <CgOption Name="EnableSharingOfSequentialControlVariables" Value="1" Type="BOOL"/>
+            <CgOption Name="ExploitComputeThroughOverflow" Value="2" Type="INT"/>
+            <CgOption Name="ExploitRangesIndependentOfErasable" Value="0" Type="BOOL"/>
+            <CgOption Name="ExtendedBlockComments" Value="0" Type="BOOL"/>
+            <CgOption Name="ExtendedLifeTimeOptimization" Value="1" Type="BOOL"/>
+            <CgOption Name="ExtendedVariableSharing" Value="0" Type="BOOL"/>
+            <CgOption Name="ForceBooleanOperandsInBooleanOperations" Value="1" Type="BOOL"/>
+            <CgOption Name="ForceCodeGenOfMisspecifiedVariableWidthsBlocks" Value="0" Type="BOOL"/>
+            <CgOption Name="Generate64BitFunctions" Value="1" Type="BOOL"/>
+            <CgOption Name="GenerateEmptyConditionalBranches" Value="0" Type="BOOL"/>
+            <CgOption Name="GenerateFrameVariablesForAccessFunctions" Value="0" Type="BOOL"/>
+            <CgOption Name="GenerateIWriteForNonScalarIrvs" Value="0" Type="BOOL"/>
+            <CgOption Name="GenerateTLVersionMacro" Value="0" Type="BOOL"/>
+            <CgOption Name="GlobalOptimizationIterationThreshold" Value="30" Type="INT"/>
+            <CgOption Name="HandleUnscaledStateflowExpressionsWithTlType" Value="1" Type="BOOL"/>
+            <CgOption Name="IgnoreAccessFunctionsInOwnModule" Value="0" Type="BOOL"/>
+            <CgOption Name="ImplementFloatEqualityViaMacros" Value="0" Type="BOOL"/>
+            <CgOption Name="ImplementLookUpTableFunctionsWithPointerArithmetics" Value="1" Type="BOOL"/>
+            <CgOption Name="InitializeVariablesViaRestartFunction" Value="1" Type="INT"/>
+            <CgOption Name="InliningThreshold" Value="6" Type="INT"/>
+            <CgOption Name="InsertComputeThroughOverflowComments" Value="0" Type="BOOL"/>
+            <CgOption Name="InsertVoidCastForUnusedFcnCallReturnValue" Value="0" Type="INT"/>
+            <CgOption Name="KeepSaturationStatements" Value="0" Type="BOOL"/>
+            <CgOption Name="LimitVariableNameLength" Value="1" Type="BOOL"/>
+            <CgOption Name="LineBreakLimit" Value="100" Type="INT"/>
+            <CgOption Name="Logging" Value="1" Type="INT"/>
+            <CgOption Name="LoopUnrollThreshold" Value="5" Type="INT"/>
+            <CgOption Name="MapTypeLimitMacrosToTargetConfigurationValues" Value="0" Type="BOOL"/>
+            <CgOption Name="NumberOfDataPages" Value="2" Type="INT"/>
+            <CgOption Name="OmitZeroInitializationsInRestartFunction" Value="0" Type="BOOL"/>
+            <CgOption Name="Optimization" Value="1" Type="BOOL"/>
+            <CgOption Name="OptimizationIterationThreshold" Value="50" Type="INT"/>
+            <CgOption Name="OptimizedBoolType" Value="1" Type="BOOL"/>
+            <CgOption Name="OutputMATLABCodeInfo" Value="0" Type="BOOL"/>
+            <CgOption Name="RealTimePlatformSupport" Value="0" Type="BOOL"/>
+            <CgOption Name="RebuildStateflow" Value="0" Type="BOOL"/>
+            <CgOption Name="ReduceLifetimeOfConstantVariables" Value="1" Type="INT"/>
+            <CgOption Name="ReduceScopeOfVariablesOnlyDownToFunctionLevel" Value="0" Type="BOOL"/>
+            <CgOption Name="ReduceSingletonDimensions" Value="1" Type="BOOL"/>
+            <CgOption Name="ReplaceUnrolledVectorsAndMatricesByScalars" Value="0" Type="BOOL"/>
+            <CgOption Name="ReportDataStoreUserAssertionsForCustomCode" Value="0" Type="BOOL"/>
+            <CgOption Name="ReportFailedFunctionReuseVariablePropagation" Value="0" Type="BOOL"/>
+            <CgOption Name="ReportMismatchingPortBlockSignalSpecifications" Value="0" Type="BOOL"/>
+            <CgOption Name="ReportVariableVectorWidthDetails" Value="0" Type="BOOL"/>
+            <CgOption Name="ReportVariablesExcludedFromPIM" Value="0" Type="BOOL"/>
+            <CgOption Name="RequirementInfoAsCodeComment" Value="0" Type="BOOL"/>
+            <CgOption Name="ReuseStructHandling" Value="0" Type="INT"/>
+            <CgOption Name="RootStylesheet" Value="C:\Program Files\dSPACE TargetLink 2022-B\Matlab\Tl\XML\CodeGen\Stylesheets\TL_CSourceCodeSS.xsl" Type="STRING"/>
+            <CgOption Name="SameIndirectReusePointerForSameDestination" Value="0" Type="BOOL"/>
+            <CgOption Name="ScreenInfo" Value="1" Type="BOOL"/>
+            <CgOption Name="SfStateEncoding" Value="0" Type="INT"/>
+            <CgOption Name="ShareFunctionsBetweenTLSubs" Value="0" Type="BOOL"/>
+            <CgOption Name="StateActivityEncodingLimit" Value="5" Type="INT"/>
+            <CgOption Name="StateflowUseBitfields" Value="1" Type="BOOL"/>
+            <CgOption Name="StrictRunnableInterfaceChecks" Value="1" Type="BOOL"/>
+            <CgOption Name="StrictTypedefPlacement" Value="1" Type="BOOL"/>
+            <CgOption Name="StructAssignmentDecompositionAuxVarMemoryUsageThreshold" Value="25" Type="UINT"/>
+            <CgOption Name="StructAssignmentDecompositionStatementMultiplicationThreshold" Value="2" Type="UINT"/>
+            <CgOption Name="StructCompClassUsesLinkerSection" Value="0" Type="BOOL"/>
+            <CgOption Name="SupportSinglePrecisionLibraries" Value="0" Type="INT"/>
+            <CgOption Name="SuppressNoRunnableRestartCodeError" Value="0" Type="BOOL"/>
+            <CgOption Name="UpdateReusedCGUInstanceSpecificData" Value="0" Type="BOOL"/>
+            <CgOption Name="UseBusObjectMappingInsteadOfInheritedProperties" Value="1" Type="BOOL"/>
+            <CgOption Name="UseGlobalBitfields" Value="0" Type="BOOL"/>
+            <CgOption Name="UsePlatformTypeAbstractionLayer" Value="0" Type="BOOL"/>
+            <CgOption Name="UseRootFileNameAsUserDefinedTypesHeaderBasename" Value="0" Type="BOOL"/>
+            <CgOption Name="UtilizeBitwiseShiftOperations" Value="2" Type="INT"/>
+            <CgOption Name="UtilizeExplicitDependenciesForScalingInvariantSystems" Value="0" Type="BOOL"/>
+            <CgOption Name="UtilizeValueEqualitySignalLineSplit" Value="1" Type="BOOL"/>
+            <CgOption Name="UtilizeValueEqualityStructFunctionArguments" Value="1" Type="BOOL"/>
+            <CgOption Name="UtilizeZeroInitializationOfStaticStorageDurationVariables" Value="1" Type="BOOL"/>
+        </CgOptions>
+        <Messages md5="ecb2f268c8ae29d26d0280f80d0ebfb9">
+            <Message Number="10003" Severity="Note" Title="General Messages" Text="Target name : Generic"/>
+            <Message Number="10000" Severity="Note" Title="General Messages" Text="TargetLink Code Generator 22.1"/>
+            <Message Number="10004" Severity="Note" Title="General Messages" Text="2022-10-25 Build Id 22.1.0.27"/>
+            <Message Number="10001" Severity="Note" Title="General Messages" Text="Copyright 1999-2022, dSPACE GmbH. All rights reserved."/>
+            <Message Number="10608" Severity="Note" Title="Data Dictionary Interface Messages" Text="Using base types from directory: C:\Program Files\dSPACE TargetLink 2022-B\Matlab\Tl\TargetConfiguration\I86\GCC"/>
+            <Message Number="10033" Severity="Note" Title="General Messages" Text="Using the following character set for generated code files: UTF-8."/>
+            <Message Number="10560" Severity="Note" Title="Installation Messages" Text="You can include requirement information in the generated code by activating the RequirementInfoAsCodeComment Code Generator option."/>
+        </Messages>
+    </Base>
+    <Optional/>
+</CodeGenReport>

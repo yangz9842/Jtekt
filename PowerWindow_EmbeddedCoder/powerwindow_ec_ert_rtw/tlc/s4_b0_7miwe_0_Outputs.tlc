@@ -1,0 +1,38 @@
+%implements s4_b0_7miwe_0_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+/* RelationalOperator: '<S6>/endstop_bottom_disp' incorporates:
+ *  Constant: '<S6>/position_endstop_bottom'
+ *  Inport: '<Root>/window_position'
+ */
+%<SLibCG_DumpSSCode("/*@[7837*/",SLibCG_SetBOCSC(7, 1, "", -1, "", 0, "(%<SLibCG_DumpSSCode("/*@[79b6*/",(SLibCG_SE(SLibCG_EI_CSC(5, 1, "", -1, "", 0))),"/*@]*/")>/*@>79b5*/ <= (/*@>79c2*/(int32_T)(%<SLibCG_DumpSSCode("/*@[79c4*/",(SLibCG_SE(SLibCGIR_CSCP(3, 0, 1, "", -1, "", 0))),"/*@]*/")>/*@>79c3*/ * /*@>79d0*/250U)/*@>79c1*/ << /*@>79d1*/2))"),"/*@]*/")>\
+/* RelationalOperator: '<S6>/endstop_top_disp' incorporates:
+ *  Constant: '<S6>/Constant'
+ *  Inport: '<Root>/window_position'
+ */
+%<SLibCG_DumpSSCode("/*@[788e*/",SLibCG_SetBOCSC(8, 1, "", -1, "", 0, "(%<SLibCG_DumpSSCode("/*@[79e4*/",(SLibCG_SE(SLibCG_EI_CSC(5, 1, "", -1, "", 0))),"/*@]*/")>/*@>79e3*/ >= %<SLibCG_DumpSSCode("/*@[79ef*/",(SLibCG_SE(SLibCGIR_CSCP(2, 0, 1, "", -1, "", 0))),"/*@]*/")>)"),"/*@]*/")>\
+/* Logic: '<S7>/ ' incorporates:
+ *  Constant: '<S7>/Obstacle_off_value'
+ *  Inport: '<Root>/obstacle_position'
+ *  Inport: '<Root>/window_position'
+ *  RelationalOperator: '<S7>/  '
+ *  RelationalOperator: '<S7>/   '
+ */
+/*@>7767*/powerwindow_ec_DW./*@>7998*/u/*@>653e*/ = ((%<SLibCG_DumpSSCode("/*@[7902*/",(SLibCG_SE(SLibCG_EI_CSC(5, 1, "", -1, "", 0))),"/*@]*/")>/*@>7371*/ > %<SLibCG_DumpSSCode("/*@[78e6*/",(SLibCG_SE(SLibCG_EI_CSC(4, 1, "", -1, "", 0))),"/*@]*/")>)/*@>653d*/ && (%<SLibCG_DumpSSCode("/*@[78ca*/",(SLibCG_SE(SLibCG_EI_CSC(4, 1, "", -1, "", 0))),"/*@]*/")>/*@>7375*/ > %<SLibCG_DumpSSCode("/*@[78ae*/",(SLibCG_SE(SLibCGIR_PV(0, 0, 1, 1, "", -1, "", 0))),"/*@]*/")>));
+/* Logic: '<S7>/detection_obstacle' */
+%<SLibCG_DumpSSCode("/*@[793c*/",SLibCG_SetBOCSC(9, 1, "", -1, "", 0, "(/*@>7a0e*/powerwindow_ec_DW./*@>7a0d*/u/*@>7a0c*/ && %<SLibCG_DumpSSCode("/*@[7a10*/",(SLibCG_SE(SLibCG_BOCSC(0, 1, "", -1, "", 0))),"/*@]*/")>)"),"/*@]*/")>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void detect_obstacle_endstop(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 0, fcnProtoType)>
+%endfunction

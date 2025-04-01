@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:TL="http://www.dspace.de/TargetLink">
+   <style type="text/css">
+table{
+border-spacing: 0px;
+padding: 5px; 
+border-collapse: collapse;
+width: 100%;
+}
+
+.paddedTable td { 
+padding: 5px;
+}
+
+.border
+{
+border-style: solid;
+border-color: #000000;
+border-top-width: 1px;
+border-right-width: 4px;
+border-bottom-width: 4px;
+border-left-width: 1px;
+}
+
+.borderGrey
+{
+background-color: #E0E0E0;
+border-style: solid;
+border-color: #000000;
+border-top-width: 1px;
+border-right-width: 4px;
+border-bottom-width: 4px;
+border-left-width: 1px;
+}
+
+.Grey
+{
+background-color: #E0E0E0;
+}
+</style>
+   <head>
+      <title>Report for PowerWindowController</title>
+   </head>
+   <body>
+      <h1>Report for code generation unit: PowerWindowController</h1>
+      <p>Generation date: 2025-03-31T17:59:09</p>
+      <h2>Available Reports:</h2>
+      <ul>
+         <li>
+            <a href="#Messages">Messages</a>
+         </li>
+         <li>
+            <a href="#Options">Options</a>
+         </li>
+      </ul>
+      <p>
+         <small>For more information on the code generation report, refer to <a href="matlab:tl_online_help('topic','8caacf82-c886-4426-87ae-4a517d2534be');">dSPACE Help</a>.</small>
+      </p>
+      <hr/>
+      <a name="Messages">
+         <h2>Messages</h2>
+      </a>
+      <table class="paddedTable">
+         <tr>
+            <td valign="top">10003</td>
+            <td valign="top">Note</td>
+            <td>
+               <table>
+                  <tr>
+                     <td colspan="2">General Messages</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">Target name : Generic</td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr class="Grey">
+            <td valign="top">10000</td>
+            <td valign="top">Note</td>
+            <td>
+               <table>
+                  <tr>
+                     <td colspan="2">General Messages</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">TargetLink Code Generator 22.1</td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td valign="top">10004</td>
+            <td valign="top">Note</td>
+            <td>
+               <table>
+                  <tr>
+                     <td colspan="2">General Messages</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">2022-10-25 Build Id 22.1.0.27</td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr class="Grey">
+            <td valign="top">10001</td>
+            <td valign="top">Note</td>
+            <td>
+               <table>
+                  <tr>
+                     <td colspan="2">General Messages</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">Copyright 1999-2022, dSPACE GmbH. All rights reserved.</td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td valign="top">10608</td>
+            <td valign="top">Note</td>
+            <td>
+               <table>
+                  <tr>
+                     <td colspan="2">Data Dictionary Interface Messages</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">Using base types from directory: C:\Program Files\dSPACE TargetLink 2022-B\Matlab\Tl\TargetConfiguration\I86\GCC</td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr class="Grey">
+            <td valign="top">10033</td>
+            <td valign="top">Note</td>
+            <td>
+               <table>
+                  <tr>
+                     <td colspan="2">General Messages</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">Using the following character set for generated code files: UTF-8.</td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td valign="top">10560</td>
+            <td valign="top">Note</td>
+            <td>
+               <table>
+                  <tr>
+                     <td colspan="2">Installation Messages</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">You can include requirement information in the generated code by activating the RequirementInfoAsCodeComment Code Generator option.</td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+      <hr/>
+      <a name="Options">
+         <h2>Options</h2>
+      </a>
+      <table class="paddedTable">
+         <tr>
+            <td>STRING</td>
+            <td>ARDataPrototypeActualParamName</td>
+            <td>$(DataPrototype)$R</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>AlarmActivationKind</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>AlarmInitWithRestart</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>DOUBLE</td>
+            <td>AlarmStartOffset</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>Allow64BitMultiplicationsForArbitraryScaled16BitOperands</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>AllowDuplicationOfImplicitAUTOSARDataAccess</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>AllowInterleavingCodeForAllSubsystems</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>AllowMovingOfCustomCodeForBlockDiagramBasedSwitchOptimization</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>AllowStructAssignments</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>AssignmentOfConditions</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>AssumeFunctionCallSemanticsForRteAPIArguments</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>AssumeOperationCallsHaveNoUnknownDataFlow</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>AssumePossibleSideEffectsForReadAccessToNonErasableVariables</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>AutoInitAlarm</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>AutoPriority</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>AutoSelectBoolTypesForLocalMATLABVariables</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>AutoSelectFloatTypesForLocalMATLABVariables</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>AutoSelectIntegerTypesForLocalMATLABVariables</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>AvoidNestedVariablePropagationPointerAccess</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>AvoidStaticLocalScope</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>INT</td>
+            <td>CodeCoverageLevel</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>CodeGenerationMode</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>STRING</td>
+            <td>CodeGenerationTargetSettings</td>
+            <td>Generic ANSI-C</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>CombineControlFlowStatements</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>STRING</td>
+            <td>ConfigXML</td>
+            <td>C:\Program Files\dSPACE TargetLink 2022-B\Matlab\Tl\config\codegen\cconfig.xml</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>ConformingFreestandingImplementation</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ConsiderAllVariablesForBlockDiagramBasedSwitchOptimization</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>ConsiderMergeableForBlockDiagramBasedSwitchOptimization</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>STRING</td>
+            <td>CurrentRtos</td>
+            <td>generic RTOS</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>DecimalConstants</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>STRING</td>
+            <td>DefaultCppHeaderFileExtension</td>
+            <td>h</td>
+         </tr>
+         <tr class="Grey">
+            <td>STRING</td>
+            <td>DefaultCppSourceFileExtension</td>
+            <td>cpp</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>DeriveDefaultSymbolClasses</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>DoNotMoveIfLogged</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>DoNotUseAssignArithmeticForAccumulation</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>EmitAllTagNameConflictsAsError</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>INT</td>
+            <td>EmitEncapsulationByExternC</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>EmitMissingRequirementsWarningsAsNotes</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>EnableAssembler</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>EnableBlockDiagramBasedSwitchOptimization</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>EnableDataPages</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>EnableExternCStateflowSymbols</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>EnableExternFunctionMerge</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>EnableReportGeneration</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>EnableSections</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>EnableSharingOfSequentialControlVariables</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>INT</td>
+            <td>ExploitComputeThroughOverflow</td>
+            <td>2</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>ExploitRangesIndependentOfErasable</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ExtendedBlockComments</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>ExtendedLifeTimeOptimization</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ExtendedVariableSharing</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>ForceBooleanOperandsInBooleanOperations</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ForceCodeGenOfMisspecifiedVariableWidthsBlocks</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>Generate64BitFunctions</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>GenerateEmptyConditionalBranches</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>GenerateFrameVariablesForAccessFunctions</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>GenerateIWriteForNonScalarIrvs</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>GenerateTLVersionMacro</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>INT</td>
+            <td>GlobalOptimizationIterationThreshold</td>
+            <td>30</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>HandleUnscaledStateflowExpressionsWithTlType</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>IgnoreAccessFunctionsInOwnModule</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>ImplementFloatEqualityViaMacros</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ImplementLookUpTableFunctionsWithPointerArithmetics</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>InitializeVariablesViaRestartFunction</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>INT</td>
+            <td>InliningThreshold</td>
+            <td>6</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>InsertComputeThroughOverflowComments</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>INT</td>
+            <td>InsertVoidCastForUnusedFcnCallReturnValue</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>KeepSaturationStatements</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>LimitVariableNameLength</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>LineBreakLimit</td>
+            <td>100</td>
+         </tr>
+         <tr>
+            <td>INT</td>
+            <td>Logging</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>LoopUnrollThreshold</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>MapTypeLimitMacrosToTargetConfigurationValues</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>NumberOfDataPages</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>OmitZeroInitializationsInRestartFunction</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>Optimization</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>INT</td>
+            <td>OptimizationIterationThreshold</td>
+            <td>50</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>OptimizedBoolType</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>OutputMATLABCodeInfo</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>RealTimePlatformSupport</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>RebuildStateflow</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>ReduceLifetimeOfConstantVariables</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ReduceScopeOfVariablesOnlyDownToFunctionLevel</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>ReduceSingletonDimensions</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ReplaceUnrolledVectorsAndMatricesByScalars</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>ReportDataStoreUserAssertionsForCustomCode</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ReportFailedFunctionReuseVariablePropagation</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>ReportMismatchingPortBlockSignalSpecifications</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ReportVariableVectorWidthDetails</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>ReportVariablesExcludedFromPIM</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>RequirementInfoAsCodeComment</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>ReuseStructHandling</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>STRING</td>
+            <td>RootStylesheet</td>
+            <td>C:\Program Files\dSPACE TargetLink 2022-B\Matlab\Tl\XML\CodeGen\Stylesheets\TL_CSourceCodeSS.xsl</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>SameIndirectReusePointerForSameDestination</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ScreenInfo</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>SfStateEncoding</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>ShareFunctionsBetweenTLSubs</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>StateActivityEncodingLimit</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>StateflowUseBitfields</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>StrictRunnableInterfaceChecks</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>StrictTypedefPlacement</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>UINT</td>
+            <td>StructAssignmentDecompositionAuxVarMemoryUsageThreshold</td>
+            <td>25</td>
+         </tr>
+         <tr>
+            <td>UINT</td>
+            <td>StructAssignmentDecompositionStatementMultiplicationThreshold</td>
+            <td>2</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>StructCompClassUsesLinkerSection</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>INT</td>
+            <td>SupportSinglePrecisionLibraries</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>SuppressNoRunnableRestartCodeError</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>UpdateReusedCGUInstanceSpecificData</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>UseBusObjectMappingInsteadOfInheritedProperties</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>UseGlobalBitfields</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>UsePlatformTypeAbstractionLayer</td>
+            <td>0</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>UseRootFileNameAsUserDefinedTypesHeaderBasename</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>INT</td>
+            <td>UtilizeBitwiseShiftOperations</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>UtilizeExplicitDependenciesForScalingInvariantSystems</td>
+            <td>0</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>UtilizeValueEqualitySignalLineSplit</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>BOOL</td>
+            <td>UtilizeValueEqualityStructFunctionArguments</td>
+            <td>1</td>
+         </tr>
+         <tr class="Grey">
+            <td>BOOL</td>
+            <td>UtilizeZeroInitializationOfStaticStorageDurationVariables</td>
+            <td>1</td>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

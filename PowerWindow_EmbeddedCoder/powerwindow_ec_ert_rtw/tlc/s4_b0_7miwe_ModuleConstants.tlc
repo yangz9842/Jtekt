@@ -1,0 +1,28 @@
+%implements s4_b0_7miwe_ModuleConstants "C"
+
+%function ModuleConstants(block) Output
+
+
+/* Named constants for Chart: '<S1>/control' */
+#define powerwindow_ec_IN_DriverDown ((uint8_T)1U)
+#define powerwindow_ec_IN_DriverUp ((uint8_T)1U)
+#define powerwindow_ec_IN_NO_ACTIVE_CHILD ((uint8_T)0U)
+#define powerwindow_ec_IN_PassengerUp ((uint8_T)1U)
+#define powerwindow_ec_IN_autoDriverDown ((uint8_T)2U)
+#define powerwindow_ec_IN_autoDriverUp ((uint8_T)2U)
+#define powerwindow_ec_IN_autoPassengerDown ((uint8_T)1U)
+#define powerwindow_ec_IN_autoPassengerUp ((uint8_T)2U)
+#define powerwindow_ec_IN_driverDown ((uint8_T)1U)
+#define powerwindow_ec_IN_driverNeutral ((uint8_T)2U)
+#define powerwindow_ec_IN_driverUp ((uint8_T)3U)
+#define powerwindow_ec_IN_emergencyDown ((uint8_T)1U)
+#define powerwindow_ec_IN_iniDriverDown ((uint8_T)3U)
+#define powerwindow_ec_IN_iniDriverUp ((uint8_T)3U)
+#define powerwindow_ec_IN_iniPassengerDown ((uint8_T)2U)
+#define powerwindow_ec_IN_iniPassengerUp ((uint8_T)3U)
+#define powerwindow_ec_IN_passengerDown ((uint8_T)1U)
+#define powerwindow_ec_IN_passengerDown_g ((uint8_T)3U)
+#define powerwindow_ec_IN_passengerUp ((uint8_T)2U)
+#define powerwindow_ec_IN_passengerneutral ((uint8_T)3U)
+#define powerwindow_ec_IN_safe ((uint8_T)2U)
+%endfunction

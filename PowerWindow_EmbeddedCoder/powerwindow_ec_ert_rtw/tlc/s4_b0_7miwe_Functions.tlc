@@ -1,0 +1,367 @@
+%implements s4_b0_7miwe_Functions "C"
+
+%function powerwindow__exit_internal_driverNeutral_Fcn0(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+/* Exit Internal 'driverNeutral': '<S2>:3' */
+switch (powerwindow_ec_DW.is_driverNeutral) {
+  case powerwindow_ec_IN_passengerDown:
+    /* Exit Internal 'passengerDown': '<S2>:7' */
+    /*@>12203*/powerwindow_ec_DW./*@>13a1f*/is_passengerDown/*@>38dd*/ = /*@>c453*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+    /* Exit 'passengerDown': '<S2>:7' */
+%<SLibCG_DumpSSCode("/*@[12ffc*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13a3f*/false"),"/*@]*/")>\
+    /*@>1220f*/powerwindow_ec_DW./*@>13a25*/is_driverNeutral/*@>20f2*/ = /*@>c44d*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+    break;
+  case powerwindow_ec_IN_passengerUp:
+    /* Exit Internal 'passengerUp': '<S2>:24' */
+    /*@>12209*/powerwindow_ec_DW./*@>13a22*/is_passengerUp/*@>38fa*/ = /*@>c456*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+    /* Exit 'passengerUp': '<S2>:24' */
+%<SLibCG_DumpSSCode("/*@[13018*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13a51*/false"),"/*@]*/")>\
+    /*@>12215*/powerwindow_ec_DW./*@>13a28*/is_driverNeutral/*@>20f6*/ = /*@>c450*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+    break;
+  default:
+    /*@>121fd*/powerwindow_ec_DW./*@>13a1c*/is_driverNeutral/*@>20ee*/ = /*@>c44a*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+    break;
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void powerwindow__exit_internal_driverNeutral(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 0, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function powerwindow_ec_safe_Fcn1(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+/* During 'safe': '<S2>:1' */
+if (%<SLibCG_DumpSSCode("/*@[130bf*/",(SLibCG_BOCSC(9, 1, "", -1, "", 0)),"/*@]*/")>) {
+    /* Transition: '<S2>:60' */
+    /* Exit Internal 'safe': '<S2>:1' */
+/*@>2f6d*/    switch (/*@>12053*/powerwindow_ec_DW./*@>13c39*/is_safe) {
+      case /*@>c31a*/powerwindow_ec_IN_driverDown:
+        /* Exit Internal 'driverDown': '<S2>:41' */
+        /*@>12071*/powerwindow_ec_DW./*@>13c48*/is_driverDown/*@>2fd4*/ = /*@>c331*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+        /* Exit 'driverDown': '<S2>:41' */
+        /*@>120bf*/powerwindow_ec_DW./*@>13c6f*/is_safe/*@>2f8d*/ = /*@>c324*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+        break;
+      case /*@>c31b*/powerwindow_ec_IN_driverNeutral:
+        %<SLibCG_DumpSSCode("/*@[139a8*/",(SLibCGCallSubFcn("powerwindow__exit_internal_driverNeutral", [], 3, 1, 2)),"/*@]*/")>;
+        /*@>12077*/powerwindow_ec_DW./*@>13c4b*/is_safe/*@>2f91*/ = /*@>c327*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+        break;
+      case /*@>c31c*/powerwindow_ec_IN_driverUp:
+        /* Exit Internal 'driverUp': '<S2>:49' */
+        /*@>1207d*/powerwindow_ec_DW./*@>13c4e*/is_driverUp/*@>2ff1*/ = /*@>c334*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+        /* Exit 'driverUp': '<S2>:49' */
+        /*@>120c5*/powerwindow_ec_DW./*@>13c72*/is_safe/*@>2f95*/ = /*@>c32a*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+        break;
+      default:
+        /*@>12059*/powerwindow_ec_DW./*@>13c3c*/is_safe/*@>2f80*/ = /*@>c321*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+        break;
+    }
+    /*@>12095*/powerwindow_ec_DW./*@>13c5a*/is_c1_powerwindow_ec/*@>2056*/ = /*@>c2db*/powerwindow_ec_IN_emergencyDown;
+    /*@>120b9*/powerwindow_ec_DW./*@>13c6c*/temporalCounter_i1/*@>205c*/ = /*@>13a99*/0U;
+    /* Entry 'emergencyDown': '<S2>:59' */
+%<SLibCG_DumpSSCode("/*@[13374*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13d1f*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[13390*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13d31*/true"),"/*@]*/")>\
+} else {
+    switch (powerwindow_ec_DW.is_safe) {
+      case powerwindow_ec_IN_driverDown:
+        /* During 'driverDown': '<S2>:41' */
+        /*@>2ec1*/if (%<SLibCG_DumpSSCode("/*@[13110*/",(SLibCG_BOCSC(7, 1, "", -1, "", 0)),"/*@]*/")>) {
+            /* Transition: '<S2>:65' */
+            /* Exit Internal 'driverDown': '<S2>:41' */
+            /*@>12089*/powerwindow_ec_DW./*@>13c54*/is_driverDown/*@>302b*/ = /*@>c33a*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+            /* Exit 'driverDown': '<S2>:41' */
+            /*@>120cb*/powerwindow_ec_DW./*@>13c75*/is_safe/*@>2ef3*/ = /*@>c2f7*/powerwindow_ec_IN_driverNeutral;
+            /* Entry 'driverNeutral': '<S2>:3' */
+            /* Entry Internal 'driverNeutral': '<S2>:3' */
+            /* Transition: '<S2>:23' */
+            /*@>1216d*/powerwindow_ec_DW./*@>13cc6*/is_driverNeutral/*@>3302*/ = /*@>c3ab*/powerwindow_ec_IN_passengerneutral;
+            /* Entry 'passengerneutral': '<S2>:4' */
+%<SLibCG_DumpSSCode("/*@[1356c*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13d43*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[13588*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13d55*/false"),"/*@]*/")>\
+        } else /*@>2ec2*/if (%<SLibCG_DumpSSCode("/*@[1312b*/",(SLibCG_BOCSC(5, 1, "", -1, "", 0)),"/*@]*/")>) {
+            /* Transition: '<S2>:71' */
+            /* Exit Internal 'driverDown': '<S2>:41' */
+            /*@>120ad*/powerwindow_ec_DW./*@>13c66*/is_driverDown/*@>3178*/ = /*@>c36a*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+            /* Exit 'driverDown': '<S2>:41' */
+%<SLibCG_DumpSSCode("/*@[133c8*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13d67*/false"),"/*@]*/")>\
+            /*@>12101*/powerwindow_ec_DW./*@>13c90*/is_safe/*@>2ef7*/ = /*@>c2fa*/powerwindow_ec_IN_driverUp;
+            /* Entry 'driverUp': '<S2>:49' */
+%<SLibCG_DumpSSCode("/*@[1341c*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13d79*/true"),"/*@]*/")>\
+            /*@>12185*/powerwindow_ec_DW./*@>13cd2*/is_driverUp/*@>2efe*/ = /*@>c2fd*/powerwindow_ec_IN_DriverUp;
+        } else {
+/*@>2ec4*/            switch (/*@>12065*/powerwindow_ec_DW./*@>13c42*/is_driverDown) {
+              case /*@>c2f1*/powerwindow_ec_IN_DriverDown:
+                /* During 'DriverDown': '<S2>:47' */
+                /*@>3133*/if (%<SLibCG_DumpSSCode("/*@[1320b*/",(SLibCG_BOCSC(6, 1, "", -1, "", 0)),"/*@]*/")>) {
+                    /* Transition: '<S2>:64' */
+                    /*@>120e3*/powerwindow_ec_DW./*@>13c81*/is_driverDown/*@>3146*/ = /*@>c362*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+                    /* Exit 'driverDown': '<S2>:41' */
+                    /*@>12143*/powerwindow_ec_DW./*@>13cb1*/is_safe/*@>314e*/ = /*@>c365*/powerwindow_ec_IN_driverNeutral;
+                    /* Entry 'driverNeutral': '<S2>:3' */
+                    /* Entry Internal 'driverNeutral': '<S2>:3' */
+                    /* Transition: '<S2>:23' */
+                    /*@>121c1*/powerwindow_ec_DW./*@>13cf0*/is_driverNeutral/*@>36ee*/ = /*@>c3fe*/powerwindow_ec_IN_passengerneutral;
+                    /* Entry 'passengerneutral': '<S2>:4' */
+%<SLibCG_DumpSSCode("/*@[13684*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13d8b*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[136a0*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13d9d*/false"),"/*@]*/")>\
+                }
+                break;
+              case /*@>c2f2*/powerwindow_ec_IN_autoDriverDown:
+                /* During 'autoDriverDown': '<S2>:42' */
+                break;
+              default:
+                /* {S!d44}Constant: '<S1>/Constant1' */
+                /* During 'iniDriverDown': '<S2>:43' */
+                /*@>30f2*/if (/*@>120a7*/powerwindow_ec_DW./*@>13c63*/temporalCounter_i1/*@>3125*/ >= %<SLibCG_DumpSSCode("/*@[131d4*/",(SLibCG_SE(SLibCGIR_CSCP(4, 0, 1, "", -1, "", 0))),"/*@]*/")>) {
+                    /* Transition: '<S2>:45' */
+                    /*@>30f3*/if (%<SLibCG_DumpSSCode("/*@[131f0*/",(SLibCG_BOCSC(6, 1, "", -1, "", 0)),"/*@]*/")>) {
+                        /* Transition: '<S2>:46' */
+                        /*@>1213d*/powerwindow_ec_DW./*@>13cae*/is_driverDown/*@>311b*/ = /*@>c359*/powerwindow_ec_IN_autoDriverDown;
+                    } else {
+                        /* Transition: '<S2>:48' */
+                        /*@>12137*/powerwindow_ec_DW./*@>13cab*/is_driverDown/*@>3117*/ = /*@>c356*/powerwindow_ec_IN_DriverDown;
+                    }
+                }
+                break;
+            }
+        }
+        break;
+      case powerwindow_ec_IN_driverNeutral:
+        /* During 'driverNeutral': '<S2>:3' */
+        /*@>2f11*/if (%<SLibCG_DumpSSCode("/*@[13146*/",(SLibCG_BOCSC(5, 1, "", -1, "", 0)),"/*@]*/")>) {
+            /* Transition: '<S2>:62' */
+            %<SLibCG_DumpSSCode("/*@[13992*/",(SLibCGCallSubFcn("powerwindow__exit_internal_driverNeutral", [], 3, 1, 1)),"/*@]*/")>;
+            /*@>1208f*/powerwindow_ec_DW./*@>13c57*/is_safe/*@>2f46*/ = /*@>c308*/powerwindow_ec_IN_driverUp;
+            /* Entry 'driverUp': '<S2>:49' */
+%<SLibCG_DumpSSCode("/*@[13400*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13daf*/true"),"/*@]*/")>\
+            /*@>120fb*/powerwindow_ec_DW./*@>13c8d*/is_driverUp/*@>2f4e*/ = /*@>c30e*/powerwindow_ec_IN_iniDriverUp;
+            /*@>1211f*/powerwindow_ec_DW./*@>13c9f*/temporalCounter_i1/*@>2f56*/ = /*@>13a9c*/0U;
+        } else /*@>2f12*/if (%<SLibCG_DumpSSCode("/*@[13161*/",(SLibCG_BOCSC(4, 1, "", -1, "", 0)),"/*@]*/")>) {
+            /* Transition: '<S2>:63' */
+            %<SLibCG_DumpSSCode("/*@[1397c*/",(SLibCGCallSubFcn("powerwindow__exit_internal_driverNeutral", [], 3, 1, 0)),"/*@]*/")>;
+            /*@>120b3*/powerwindow_ec_DW./*@>13c69*/is_safe/*@>2f4a*/ = /*@>c30b*/powerwindow_ec_IN_driverDown;
+            /* Entry 'driverDown': '<S2>:41' */
+%<SLibCG_DumpSSCode("/*@[13438*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13dc1*/true"),"/*@]*/")>\
+            /*@>12119*/powerwindow_ec_DW./*@>13c9c*/is_driverDown/*@>2f52*/ = /*@>c311*/powerwindow_ec_IN_iniDriverDown;
+            /*@>12161*/powerwindow_ec_DW./*@>13cc0*/temporalCounter_i1/*@>2f5a*/ = /*@>13a9f*/0U;
+        } else {
+/*@>2f14*/            switch (/*@>1206b*/powerwindow_ec_DW./*@>13c45*/is_driverNeutral) {
+              case /*@>c302*/powerwindow_ec_IN_passengerDown:
+                /* During 'passengerDown': '<S2>:7' */
+                /*@>31e2*/if (%<SLibCG_DumpSSCode("/*@[1325c*/",(SLibCG_BOCSC(7, 1, "", -1, "", 0)),"/*@]*/")>) {
+                    /* Transition: '<S2>:22' */
+                    /* Exit Internal 'passengerDown': '<S2>:7' */
+                    /*@>1210d*/powerwindow_ec_DW./*@>13c96*/is_passengerDown/*@>33e4*/ = /*@>c3b3*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+                    /* Exit 'passengerDown': '<S2>:7' */
+                    /*@>12179*/powerwindow_ec_DW./*@>13ccc*/is_driverNeutral/*@>3214*/ = /*@>c385*/powerwindow_ec_IN_passengerneutral;
+                    /* Entry 'passengerneutral': '<S2>:4' */
+%<SLibCG_DumpSSCode("/*@[134a8*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13dd3*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[134c4*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13de5*/false"),"/*@]*/")>\
+                } else /*@>31e3*/if (%<SLibCG_DumpSSCode("/*@[13277*/",(SLibCG_BOCSC(2, 1, "", -1, "", 0)),"/*@]*/")>) {
+                    /* Transition: '<S2>:38' */
+                    /* Exit Internal 'passengerDown': '<S2>:7' */
+                    /*@>1214f*/powerwindow_ec_DW./*@>13cb7*/is_passengerDown/*@>34c7*/ = /*@>c3cd*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+                    /* Exit 'passengerDown': '<S2>:7' */
+%<SLibCG_DumpSSCode("/*@[13470*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13df7*/false"),"/*@]*/")>\
+                    /*@>121b5*/powerwindow_ec_DW./*@>13cea*/is_driverNeutral/*@>3218*/ = /*@>c388*/powerwindow_ec_IN_passengerUp;
+                    /* Entry 'passengerUp': '<S2>:24' */
+%<SLibCG_DumpSSCode("/*@[13518*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13e09*/true"),"/*@]*/")>\
+                    /*@>121f1*/powerwindow_ec_DW./*@>13d08*/is_passengerUp/*@>321f*/ = /*@>c38b*/powerwindow_ec_IN_PassengerUp;
+                } else {
+/*@>31e5*/                    switch (/*@>120ef*/powerwindow_ec_DW./*@>13c87*/is_passengerDown) {
+                      case /*@>c37f*/powerwindow_ec_IN_autoPassengerDown:
+                        /* During 'autoPassengerDown': '<S2>:9' */
+                        break;
+                      case /*@>c380*/powerwindow_ec_IN_iniPassengerDown:
+                        /* {S!d46}Constant: '<S1>/Constant1' */
+                        /* During 'iniPassengerDown': '<S2>:15' */
+                        /*@>3471*/if (/*@>12149*/powerwindow_ec_DW./*@>13cb4*/temporalCounter_i1/*@>34a4*/ >= %<SLibCG_DumpSSCode("/*@[132e6*/",(SLibCG_SE(SLibCGIR_CSCP(4, 0, 1, "", -1, "", 0))),"/*@]*/")>) {
+                            /* Transition: '<S2>:16' */
+                            /*@>3472*/if (%<SLibCG_DumpSSCode("/*@[13302*/",(SLibCG_BOCSC(3, 1, "", -1, "", 0)),"/*@]*/")>) {
+                                /* Transition: '<S2>:17' */
+                                /*@>121d3*/powerwindow_ec_DW./*@>13cf9*/is_passengerDown/*@>349a*/ = /*@>c3c4*/powerwindow_ec_IN_autoPassengerDown;
+                            } else {
+                                /* Transition: '<S2>:18' */
+                                /*@>121cd*/powerwindow_ec_DW./*@>13cf6*/is_passengerDown/*@>3496*/ = /*@>c3c1*/powerwindow_ec_IN_passengerDown_g;
+                            }
+                        }
+                        break;
+                      default:
+                        /* During 'passengerDown': '<S2>:13' */
+                        /*@>3441*/if (%<SLibCG_DumpSSCode("/*@[132c8*/",(SLibCG_BOCSC(3, 1, "", -1, "", 0)),"/*@]*/")>) {
+                            /* Transition: '<S2>:35' */
+                            /*@>12197*/powerwindow_ec_DW./*@>13cdb*/is_passengerDown/*@>3454*/ = /*@>c3b9*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+                            /* Exit 'passengerDown': '<S2>:7' */
+                            /*@>121c7*/powerwindow_ec_DW./*@>13cf3*/is_driverNeutral/*@>345c*/ = /*@>c3bc*/powerwindow_ec_IN_passengerneutral;
+                            /* Entry 'passengerneutral': '<S2>:4' */
+%<SLibCG_DumpSSCode("/*@[135dc*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13e1b*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[135f8*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13e2d*/false"),"/*@]*/")>\
+                        }
+                        break;
+                    }
+                }
+                break;
+              case /*@>c303*/powerwindow_ec_IN_passengerUp:
+                /* During 'passengerUp': '<S2>:24' */
+                /*@>3232*/if (%<SLibCG_DumpSSCode("/*@[13292*/",(SLibCG_BOCSC(1, 1, "", -1, "", 0)),"/*@]*/")>) {
+                    /* Transition: '<S2>:39' */
+                    /* Exit Internal 'passengerUp': '<S2>:24' */
+                    /*@>12113*/powerwindow_ec_DW./*@>13c99*/is_passengerUp/*@>3401*/ = /*@>c3b6*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+                    /* Exit 'passengerUp': '<S2>:24' */
+%<SLibCG_DumpSSCode("/*@[13454*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13e3f*/false"),"/*@]*/")>\
+                    /*@>121a9*/powerwindow_ec_DW./*@>13ce4*/is_driverNeutral/*@>3264*/ = /*@>c396*/powerwindow_ec_IN_passengerDown;
+                    /* Entry 'passengerDown': '<S2>:7' */
+%<SLibCG_DumpSSCode("/*@[134e0*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13e51*/true"),"/*@]*/")>\
+                    /*@>121eb*/powerwindow_ec_DW./*@>13d05*/is_passengerDown/*@>326c*/ = /*@>c39c*/powerwindow_ec_IN_passengerDown_g;
+                } else /*@>3233*/if (%<SLibCG_DumpSSCode("/*@[132ad*/",(SLibCG_BOCSC(8, 1, "", -1, "", 0)),"/*@]*/")>) {
+                    /* Transition: '<S2>:36' */
+                    /* Exit Internal 'passengerUp': '<S2>:24' */
+                    /*@>1215b*/powerwindow_ec_DW./*@>13cbd*/is_passengerUp/*@>3563*/ = /*@>c3e4*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+                    /* Exit 'passengerUp': '<S2>:24' */
+                    /*@>121a3*/powerwindow_ec_DW./*@>13ce1*/is_driverNeutral/*@>3268*/ = /*@>c399*/powerwindow_ec_IN_passengerneutral;
+                    /* Entry 'passengerneutral': '<S2>:4' */
+%<SLibCG_DumpSSCode("/*@[13534*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13e63*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[13550*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13e75*/false"),"/*@]*/")>\
+                } else {
+/*@>3235*/                    switch (/*@>120f5*/powerwindow_ec_DW./*@>13c8a*/is_passengerUp) {
+                      case /*@>c390*/powerwindow_ec_IN_PassengerUp:
+                        /* During 'PassengerUp': '<S2>:25' */
+                        /*@>351e*/if (%<SLibCG_DumpSSCode("/*@[13357*/",(SLibCG_BOCSC(3, 1, "", -1, "", 0)),"/*@]*/")>) {
+                            /* Transition: '<S2>:37' */
+                            /*@>1219d*/powerwindow_ec_DW./*@>13cde*/is_passengerUp/*@>3531*/ = /*@>c3dc*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+                            /* Exit 'passengerUp': '<S2>:24' */
+                            /*@>121e5*/powerwindow_ec_DW./*@>13d02*/is_driverNeutral/*@>3539*/ = /*@>c3df*/powerwindow_ec_IN_passengerneutral;
+                            /* Entry 'passengerneutral': '<S2>:4' */
+%<SLibCG_DumpSSCode("/*@[13614*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13e87*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[13630*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13e99*/false"),"/*@]*/")>\
+                        }
+                        break;
+                      case /*@>c391*/powerwindow_ec_IN_autoPassengerUp:
+                        /* During 'autoPassengerUp': '<S2>:27' */
+                        break;
+                      default:
+                        /* {S!d48}Constant: '<S1>/Constant2' */
+                        /* During 'iniPassengerUp': '<S2>:28' */
+                        /*@>34dd*/if (/*@>12155*/powerwindow_ec_DW./*@>13cba*/temporalCounter_i1/*@>3510*/ >= %<SLibCG_DumpSSCode("/*@[13320*/",(SLibCG_SE(SLibCGIR_CSCP(5, 0, 1, "", -1, "", 0))),"/*@]*/")>) {
+                            /* Transition: '<S2>:32' */
+                            /*@>34de*/if (%<SLibCG_DumpSSCode("/*@[1333c*/",(SLibCG_BOCSC(3, 1, "", -1, "", 0)),"/*@]*/")>) {
+                                /* Transition: '<S2>:30' */
+                                /*@>121df*/powerwindow_ec_DW./*@>13cff*/is_passengerUp/*@>3506*/ = /*@>c3d3*/powerwindow_ec_IN_autoPassengerUp;
+                            } else {
+                                /* Transition: '<S2>:31' */
+                                /*@>121d9*/powerwindow_ec_DW./*@>13cfc*/is_passengerUp/*@>3502*/ = /*@>c3d0*/powerwindow_ec_IN_PassengerUp;
+                            }
+                        }
+                        break;
+                    }
+                }
+                break;
+              default:
+                /* During 'passengerneutral': '<S2>:4' */
+                /*@>318e*/if (%<SLibCG_DumpSSCode("/*@[13226*/",(SLibCG_BOCSC(2, 1, "", -1, "", 0)),"/*@]*/")>) {
+                    /* Transition: '<S2>:33' */
+                    /*@>120e9*/powerwindow_ec_DW./*@>13c84*/is_driverNeutral/*@>31b8*/ = /*@>c36d*/powerwindow_ec_IN_passengerUp;
+                    /* Entry 'passengerUp': '<S2>:24' */
+%<SLibCG_DumpSSCode("/*@[1348c*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13eab*/true"),"/*@]*/")>\
+                    /*@>12173*/powerwindow_ec_DW./*@>13cc9*/is_passengerUp/*@>31c0*/ = /*@>c373*/powerwindow_ec_IN_iniPassengerUp;
+                    /*@>12191*/powerwindow_ec_DW./*@>13cd8*/temporalCounter_i1/*@>31c8*/ = /*@>13aa2*/0U;
+                } else /*@>318f*/if (%<SLibCG_DumpSSCode("/*@[13241*/",(SLibCG_BOCSC(1, 1, "", -1, "", 0)),"/*@]*/")>) {
+                    /* Transition: '<S2>:34' */
+                    /*@>12107*/powerwindow_ec_DW./*@>13c93*/is_driverNeutral/*@>31bc*/ = /*@>c370*/powerwindow_ec_IN_passengerDown;
+                    /* Entry 'passengerDown': '<S2>:7' */
+%<SLibCG_DumpSSCode("/*@[134fc*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13ebd*/true"),"/*@]*/")>\
+                    /*@>1218b*/powerwindow_ec_DW./*@>13cd5*/is_passengerDown/*@>31c4*/ = /*@>c376*/powerwindow_ec_IN_iniPassengerDown;
+                    /*@>121af*/powerwindow_ec_DW./*@>13ce7*/temporalCounter_i1/*@>31cc*/ = /*@>13aa5*/0U;
+                }
+                break;
+            }
+        }
+        break;
+      default:
+        /* During 'driverUp': '<S2>:49' */
+        /*@>2e71*/if (%<SLibCG_DumpSSCode("/*@[130da*/",(SLibCG_BOCSC(4, 1, "", -1, "", 0)),"/*@]*/")>) {
+            /* Transition: '<S2>:68' */
+            /* Exit Internal 'driverUp': '<S2>:49' */
+            /*@>12083*/powerwindow_ec_DW./*@>13c51*/is_driverUp/*@>300e*/ = /*@>c337*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+            /* Exit 'driverUp': '<S2>:49' */
+%<SLibCG_DumpSSCode("/*@[133ac*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13ecf*/false"),"/*@]*/")>\
+            /*@>120dd*/powerwindow_ec_DW./*@>13c7e*/is_safe/*@>2ea3*/ = /*@>c2e6*/powerwindow_ec_IN_driverDown;
+            /* Entry 'driverDown': '<S2>:41' */
+%<SLibCG_DumpSSCode("/*@[133e4*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13ee1*/true"),"/*@]*/")>\
+            /*@>12167*/powerwindow_ec_DW./*@>13cc3*/is_driverDown/*@>2eab*/ = /*@>c2ec*/powerwindow_ec_IN_DriverDown;
+        } else /*@>2e72*/if (%<SLibCG_DumpSSCode("/*@[130f5*/",(SLibCG_BOCSC(8, 1, "", -1, "", 0)),"/*@]*/")>) {
+            /* Transition: '<S2>:67' */
+            /* Exit Internal 'driverUp': '<S2>:49' */
+            /*@>120a1*/powerwindow_ec_DW./*@>13c60*/is_driverUp/*@>30dc*/ = /*@>c351*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+            /* Exit 'driverUp': '<S2>:49' */
+            /*@>120d7*/powerwindow_ec_DW./*@>13c7b*/is_safe/*@>2ea7*/ = /*@>c2e9*/powerwindow_ec_IN_driverNeutral;
+            /* Entry 'driverNeutral': '<S2>:3' */
+            /* Entry Internal 'driverNeutral': '<S2>:3' */
+            /* Transition: '<S2>:23' */
+            /*@>1217f*/powerwindow_ec_DW./*@>13ccf*/is_driverNeutral/*@>3323*/ = /*@>c3b0*/powerwindow_ec_IN_passengerneutral;
+            /* Entry 'passengerneutral': '<S2>:4' */
+%<SLibCG_DumpSSCode("/*@[135a4*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13ef3*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[135c0*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13f05*/false"),"/*@]*/")>\
+        } else {
+/*@>2e74*/            switch (/*@>1205f*/powerwindow_ec_DW./*@>13c3f*/is_driverUp) {
+              case /*@>c2e0*/powerwindow_ec_IN_DriverUp:
+                /* During 'DriverUp': '<S2>:51' */
+                /*@>3097*/if (%<SLibCG_DumpSSCode("/*@[131b6*/",(SLibCG_BOCSC(6, 1, "", -1, "", 0)),"/*@]*/")>) {
+                    /* Transition: '<S2>:66' */
+                    /*@>120d1*/powerwindow_ec_DW./*@>13c78*/is_driverUp/*@>30aa*/ = /*@>c349*/powerwindow_ec_IN_NO_ACTIVE_CHILD;
+                    /* Exit 'driverUp': '<S2>:49' */
+                    /*@>12131*/powerwindow_ec_DW./*@>13ca8*/is_safe/*@>30b2*/ = /*@>c34c*/powerwindow_ec_IN_driverNeutral;
+                    /* Entry 'driverNeutral': '<S2>:3' */
+                    /* Entry Internal 'driverNeutral': '<S2>:3' */
+                    /* Transition: '<S2>:23' */
+                    /*@>121bb*/powerwindow_ec_DW./*@>13ced*/is_driverNeutral/*@>36cd*/ = /*@>c3fb*/powerwindow_ec_IN_passengerneutral;
+                    /* Entry 'passengerneutral': '<S2>:4' */
+%<SLibCG_DumpSSCode("/*@[1364c*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>13f17*/false"),"/*@]*/")>\
+%<SLibCG_DumpSSCode("/*@[13668*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>13f29*/false"),"/*@]*/")>\
+                }
+                break;
+              case /*@>c2e1*/powerwindow_ec_IN_autoDriverUp:
+                /* During 'autoDriverUp': '<S2>:53' */
+                break;
+              default:
+                /* {S!d42}Constant: '<S1>/Constant2' */
+                /* During 'iniDriverUp': '<S2>:50' */
+                /*@>3056*/if (/*@>1209b*/powerwindow_ec_DW./*@>13c5d*/temporalCounter_i1/*@>3089*/ >= %<SLibCG_DumpSSCode("/*@[1317f*/",(SLibCG_SE(SLibCGIR_CSCP(5, 0, 1, "", -1, "", 0))),"/*@]*/")>) {
+                    /* Transition: '<S2>:56' */
+                    /*@>3057*/if (%<SLibCG_DumpSSCode("/*@[1319b*/",(SLibCG_BOCSC(6, 1, "", -1, "", 0)),"/*@]*/")>) {
+                        /* Transition: '<S2>:57' */
+                        /*@>1212b*/powerwindow_ec_DW./*@>13ca5*/is_driverUp/*@>307f*/ = /*@>c340*/powerwindow_ec_IN_autoDriverUp;
+                    } else {
+                        /* Transition: '<S2>:58' */
+                        /*@>12125*/powerwindow_ec_DW./*@>13ca2*/is_driverUp/*@>307b*/ = /*@>c33d*/powerwindow_ec_IN_DriverUp;
+                    }
+                }
+                break;
+            }
+        }
+        break;
+    }
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void powerwindow_ec_safe(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 1, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
