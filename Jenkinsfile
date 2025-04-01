@@ -26,7 +26,7 @@ pipeline {
                 
                 powershell 'docker exec ep bash -c "sudo apt update && sudo apt install -y python3 python3-pip"'
                 powershell 'docker exec ep sudo pip3 install --no-cache-dir btc_embedded'
-                powershell 'docker exec ep python3 pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
+                powershell 'docker exec ep python3 /tmp/ep/pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
                 
             }
             
