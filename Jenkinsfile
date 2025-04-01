@@ -23,7 +23,7 @@ pipeline {
                 // Run your Python script with arguments
                 // powershell 'python pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
                 //powershell 'python pipeline_B2B_1.py C:/ProgramData/Jenkins/.jenkins/workspace/jtekt_JP/ powerwindow_tl.slx'
-                sh 'docker exec ep python pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
+                powershell 'docker exec ep python pipeline_B2B.py /tmp/ep/ powerwindow_tl.slx'
                 
             }
             
